@@ -9,6 +9,11 @@ final int START_BUTTON_Y = 360;
 
 PImage title, gameover, startNormal, startHovered, restartNormal, restartHovered;
 PImage bg, soil8x24;
+PImage groundhogIdle, groundhogLeft, groundhogRight, groundhogDown;
+PImage  life, cabbage, stone1, stone2, soilEmpty;
+PImage soldier;
+PImage soil0, soil1, soil2, soil3, soil4, soil5;
+PImage[][] soils, stones;
 
 // For debug function; DO NOT edit or remove this!
 int playerHealth = 0;
@@ -26,6 +31,13 @@ void setup() {
 	restartNormal = loadImage("img/restartNormal.png");
 	restartHovered = loadImage("img/restartHovered.png");
 	soil8x24 = loadImage("img/soil8x24.png");
+  groundhogIdle = loadImage("img/groundhogIdle.png");
+  groundhogLeft = loadImage("img/groundhogLeft.png");
+  groundhogRight = loadImage("img/groundhogRight.png");
+  groundhogDown = loadImage("img/groundhogDown.png");
+  life = loadImage("img/life.png");
+  soldier = loadImage("img/soldier.png");
+  cabbage = loadImage("img/cabbage.png");
 }
 
 void draw() {
@@ -69,6 +81,9 @@ void draw() {
 
 		// Background
 		image(bg, 0, 0);
+ image( groundhogIdle, 320, 60);
+ image(life, 10, 10);
+ image(life, 80, 10);
 
 		// Sun
 	    stroke(255,255,0);
