@@ -82,6 +82,8 @@ void draw() {
 		// Background
 		image(bg, 0, 0);
  image( groundhogIdle, 320, 60);
+ image(life, 10, 10);
+ image(life, 80, 10);
 
 		// Sun
 	    stroke(255,255,0);
